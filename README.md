@@ -3,7 +3,24 @@
 Print-ready and editable artefacts for the Flash bearer NFC card, derived from
 the approved design draft `source/ecashNFC-v1.jpg`.
 
-**Status: draft v1. Not released to plate.** See
+**Status: draft v1. Not released to plate.**
+
+### Where this fits
+
+These are the physical artefacts for the
+[Cashu-First Flash Cards](https://github.com/lnflash/cashu-javacard) project — a
+card that holds Bitcoin-denominated ecash on its own chip and spends it by tap.
+Several design choices here are downstream of that and are not free to change:
+
+| Choice | Why | Reference |
+|---|---|---|
+| No name, no card number | It is a bearer instrument, not a debit card | [D2](https://github.com/lnflash/cashu-javacard/blob/main/docs/DECISIONS.md#d2) |
+| "Lost or stolen cards cannot be recovered" | Literally true — there is no seed and no backup | [D5](https://github.com/lnflash/cashu-javacard/blob/main/docs/DECISIONS.md#d5) |
+| JavaCard 3.0.5 on the back panel | A hard floor; 3.0.4 chips cannot run the applet | [D6](https://github.com/lnflash/cashu-javacard/blob/main/docs/DECISIONS.md#d6) |
+
+For the product reasoning, see
+[VISION](https://github.com/lnflash/cashu-javacard/blob/main/docs/VISION.md).
+ See
 [`SPECIFICATIONS.md` §7–8](SPECIFICATIONS.md) for the pre-flight checklist and
 the items still open.
 
