@@ -111,3 +111,21 @@ Where the source was ambiguous, the choice is documented in
 Design intent, rationale and the concept comparison all live in the source
 image — worth reading before making changes, since several apparent
 simplifications are deliberate.
+
+## Licence
+
+[MIT](LICENSE) — © 2026 Flash (getflash.io).
+
+MIT is a software licence and these are design artefacts; it is used here for
+consistency with the rest of the Flash repositories, and it grants everything a
+print shop or studio needs (use, modify, redistribute) provided the notice is
+kept. It does **not** grant rights to the Flash name or wordmark — reuse the
+files, not the brand.
+
+## On this being public
+
+Publishing card artwork is not a security concern for this product. The card's
+value is bound to a secp256k1 key generated inside the chip and never exported;
+a visually identical card with no valid chip cannot produce the NUT-11 signature
+a mint requires, so it holds nothing and spends nothing. The artwork is
+branding, not a credential.
