@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="91.6mm" height="59.98mm" viewBox="0 0 91.6 59.98">
+  <!--
+    Flash Card — Concept A "BEARER", FRONT
+    ISO/IEC 7810 ID-1. 1 SVG user unit = 1 mm. Artboard includes 3 mm bleed.
+    Trim: x3 y3 → 85.6 × 53.98, corner radius 3.18.
+
+    NOTE ON THE MATTE LOOK: the mockup simulates matte with a noise texture.
+    That is a screen effect and is deliberately NOT reproduced here. Matte comes
+    from the laminate (see SPECIFICATIONS.md). Printing simulated noise onto a
+    matte card fights the finish and muddies the black.
+
+    NOTE ON TEXT: set in Inter Black (900). Convert all type to outlines before
+    releasing to plate — see README.
+  -->
+  <defs>
+    <clipPath id="trim">
+      <rect x="3" y="3" width="85.6" height="53.98" rx="3.18" ry="3.18"/>
+    </clipPath>
+
+    <!-- Orange slash: gradient so it reads as a light-catch, not a racing stripe. -->
+    <linearGradient id="slash" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#f97316" stop-opacity="1"/>
+      <stop offset="55%"  stop-color="#f97316" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Chip module: gold contact plate. -->
+    <linearGradient id="chipFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#f5c96b"/>
+      <stop offset="45%"  stop-color="#e8b355"/>
+      <stop offset="100%" stop-color="#c9963f"/>
+    </linearGradient>
+
+    <g id="nfc-waves">
+      <!-- Contactless mark: three arcs + dot, drawn small. -->
+      <circle cx="0" cy="0" r="0.5" fill="currentColor"/>
+      <path d="M 1.6 -2.2 A 2.9 2.9 0 0 1 1.6 2.2" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round"/>
+      <path d="M 3.1 -3.5 A 4.6 4.6 0 0 1 3.1 3.5" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round"/>
+      <path d="M 4.6 -4.8 A 6.3 6.3 0 0 1 4.6 4.8" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <g clip-path="url(#trim)">
+    <!-- ─── Substrate ─── full bleed, near-black (NOT pure black) ─── -->
+    <rect x="0" y="0" width="91.6" height="59.98" fill="#080a0d"/>
+
+    <!-- ─── Lightning watermark ─── barely there; reads only in raking light ─── -->
+    <g opacity="0.055" transform="translate(46,14) scale(1.15)">
+      <path d="M 12 0 L 3 13 L 9 13 L 6 24 L 15 11 L 9 11 Z" fill="#ffffff"/>
+    </g>
+
+    <!-- ─── Orange slash ─── bottom-left corner ─── -->
+    <path d="M 3 57 L 3 43.5 L 30 57 Z" fill="url(#slash)"/>
+
+    <!-- ─── Chip module ─── the product, not an afterthought ─── -->
+    <g>
+      <!-- Dashed orange ring: "this is the thing" -->
+      <rect x="10.1" y="9.1" width="15.8" height="14.6" rx="1.8" ry="1.8"
+            fill="none" stroke="#f97316" stroke-width="0.35" stroke-dasharray="1.6 1.1" opacity="0.95"/>
+      <!-- Contact plate (position is nominal — see dieline keep-out) -->
+      <rect x="11.5" y="10.5" width="13" height="11.8" rx="1" ry="1" fill="url(#chipFace)"/>
+      <!-- Contact pad divisions -->
+      <g stroke="#8a6524" stroke-width="0.22" opacity="0.75">
+        <line x1="11.5" y1="14.4" x2="24.5" y2="14.4"/>
+        <line x1="11.5" y1="18.4" x2="24.5" y2="18.4"/>
+        <line x1="16.2" y1="10.5" x2="16.2" y2="14.4"/>
+        <line x1="16.2" y1="18.4" x2="16.2" y2="22.3"/>
+        <line x1="19.8" y1="10.5" x2="19.8" y2="22.3"/>
+      </g>
+      <!-- Small contactless cue beside the chip -->
+      <g transform="translate(28.4,16.4) scale(0.72)" color="#f97316" opacity="0.9">
+        <use href="#nfc-waves"/>
+      </g>
+    </g>
+
+    <!-- ─── Contactless symbol ─── bottom centre, muted ─── -->
+    <g transform="translate(44,50.6) scale(0.66)" color="#8b8f96" opacity="0.75">
+      <use href="#nfc-waves"/>
+    </g>
+
+    <!-- ─── ₿ mark ─── bottom-left, on the slash ─── -->
+    <text x="8.6" y="52.6" font-family="Inter, 'Helvetica Neue', sans-serif"
+          font-weight="700" font-size="3.4" fill="#f6f7f8" opacity="0.92">₿</text>
+
+    <!-- ─── FLASH wordmark ─── bottom-right. UV spot gloss applies HERE ─── -->
+    <text x="82.2" y="51.2" text-anchor="end"
+          font-family="Inter, 'Helvetica Neue', sans-serif"
+          font-weight="900" font-size="7.4" letter-spacing="0.15"
+          fill="#ffffff">FLASH</text>
+
+    <!-- "BEARER CARD" — the product thesis, stated in the typography -->
+    <text x="82.2" y="54.4" text-anchor="end"
+          font-family="Inter, 'Helvetica Neue', sans-serif"
+          font-weight="600" font-size="1.85" letter-spacing="1.15"
+          fill="#f97316">BEARER CARD</text>
+  </g>
+</svg>

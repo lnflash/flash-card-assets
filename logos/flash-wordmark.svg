@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="32" viewBox="0 0 120 32">
+  <!--
+    FLASH wordmark — Inter Black (900), letter-spacing 0.02em.
+    Supplied as live text so the studio can re-set it; CONVERT TO OUTLINES
+    before release. Artboard is generic (not card-scale); scale to fit.
+    On-card size in the approved concepts: 7.4 mm cap-to-baseline, right-aligned.
+  -->
+  <text x="0" y="25" font-family="Inter, 'Helvetica Neue', sans-serif"
+        font-weight="900" font-size="28" letter-spacing="0.56" fill="#ffffff">FLASH</text>
+</svg>

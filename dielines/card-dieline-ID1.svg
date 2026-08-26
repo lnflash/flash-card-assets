@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.0.dtd"
+     width="91.6mm" height="59.98mm" viewBox="0 0 91.6 59.98">
+  <!--
+    Flash Card — ISO/IEC 7810 ID-1 dieline
+    1 SVG user unit = 1 mm. Do not rescale; place artwork against this template.
+
+      Bleed  91.60 × 59.98 mm   (3 mm on every side — the full artboard)
+      Trim   85.60 × 53.98 mm   (the finished card)
+      Safe   79.60 × 47.98 mm   (3 mm inside trim — keep all text inside)
+      Corner radius 3.18 mm at trim, per ISO/IEC 7810.
+
+    Every guide below lives on its own layer (inkscape:groupmode="layer") so it
+    can be switched off or deleted before output. NOTHING on these layers prints.
+  -->
+  <defs>
+    <style>
+      .lbl { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 1.6px; font-weight: 600; }
+      .lbl-sm { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 1.25px; font-weight: 500; }
+    </style>
+  </defs>
+
+  <!-- ─── Layer: artwork placement (white = where art goes, delete before output) ─── -->
+  <g id="layer-substrate" inkscape:groupmode="layer" inkscape:label="00 substrate preview">
+    <rect x="0" y="0" width="91.6" height="59.98" fill="#ffffff"/>
+  </g>
+
+  <!-- ─── Layer: bleed ─── -->
+  <g id="layer-bleed" inkscape:groupmode="layer" inkscape:label="10 bleed 91.6x59.98">
+    <rect x="0.1" y="0.1" width="91.4" height="59.78"
+          fill="none" stroke="#ff00ff" stroke-width="0.2" stroke-dasharray="1.2 0.8"/>
+    <text class="lbl-sm" x="0.4" y="1.9" fill="#ff00ff">BLEED 91.60 × 59.98 mm — artwork must extend to this edge</text>
+  </g>
+
+  <!-- ─── Layer: trim (the cut line) ─── -->
+  <g id="layer-trim" inkscape:groupmode="layer" inkscape:label="20 trim 85.6x53.98 r3.18">
+    <rect x="3" y="3" width="85.6" height="53.98" rx="3.18" ry="3.18"
+          fill="none" stroke="#00b3d6" stroke-width="0.25"/>
+  </g>
+
+  <!-- ─── Layer: safe area ─── -->
+  <g id="layer-safe" inkscape:groupmode="layer" inkscape:label="30 safe area 79.6x47.98">
+    <rect x="6" y="6" width="79.6" height="47.98" rx="1.6" ry="1.6"
+          fill="none" stroke="#12b76a" stroke-width="0.2" stroke-dasharray="0.9 0.7"/>
+  </g>
+
+  <!--
+    ─── Layer: chip keep-out ───
+    NOMINAL position, drawn to match the approved concept (module at top-left).
+    The contact-plate footprint and its exact placement are set by the card
+    manufacturer per ISO/IEC 7816-2 and vary between module suppliers.
+    CONFIRM AGAINST THE MANUFACTURER'S OWN TEMPLATE BEFORE PLATE-MAKING.
+    Nothing may print inside this area — the module is milled in after lamination.
+  -->
+  <g id="layer-chip" inkscape:groupmode="layer" inkscape:label="40 chip keep-out (nominal)">
+    <rect x="11.5" y="10.5" width="13" height="11.8" rx="0.8" ry="0.8"
+          fill="none" stroke="#f97316" stroke-width="0.25" stroke-dasharray="0.8 0.5"/>
+    <text class="lbl-sm" x="11.5" y="23.6" fill="#f97316">CHIP KEEP-OUT 13 × 11.8 mm (nominal — confirm w/ manufacturer)</text>
+  </g>
+
+  <!--
+    ─── Layer: NFC antenna ───
+    A dual-interface card carries an induction antenna wound just inside the
+    card edge, laminated between core layers. It is invisible in the finished
+    card and imposes no print restriction, but heavy metallic or foil coverage
+    over this ring can detune it. Flag any foil to the manufacturer.
+  -->
+  <g id="layer-antenna" inkscape:groupmode="layer" inkscape:label="50 NFC antenna ring (informational)">
+    <rect x="7.5" y="7.5" width="76.6" height="44.98" rx="2.4" ry="2.4"
+          fill="none" stroke="#8b5cf6" stroke-width="0.15" stroke-dasharray="0.5 0.9" opacity="0.7"/>
+  </g>
+
+  <!-- ─── Layer: legend ─── -->
+  <g id="layer-legend" inkscape:groupmode="layer" inkscape:label="90 legend (delete before output)">
+    <g transform="translate(7,52.6)">
+      <rect x="0" y="0" width="2.2" height="0.5" fill="#ff00ff"/>
+      <text class="lbl-sm" x="2.8" y="0.6" fill="#555">bleed</text>
+      <rect x="10" y="0" width="2.2" height="0.5" fill="#00b3d6"/>
+      <text class="lbl-sm" x="12.8" y="0.6" fill="#555">trim / cut</text>
+      <rect x="24" y="0" width="2.2" height="0.5" fill="#12b76a"/>
+      <text class="lbl-sm" x="26.8" y="0.6" fill="#555">safe area</text>
+      <rect x="38" y="0" width="2.2" height="0.5" fill="#f97316"/>
+      <text class="lbl-sm" x="40.8" y="0.6" fill="#555">chip keep-out</text>
+      <rect x="54" y="0" width="2.2" height="0.5" fill="#8b5cf6"/>
+      <text class="lbl-sm" x="56.8" y="0.6" fill="#555">antenna ring</text>
+    </g>
+  </g>
+</svg>

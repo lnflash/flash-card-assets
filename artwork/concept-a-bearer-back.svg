@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="91.6mm" height="59.98mm" viewBox="0 0 91.6 59.98">
+  <!--
+    Flash Card — Concept A "BEARER", BACK  (shared by Concept B)
+    ISO/IEC 7810 ID-1. 1 unit = 1 mm. Artboard includes 3 mm bleed.
+
+    The legal copy is load-bearing, not fine print. It is the product promise
+    stated plainly: this is a bearer instrument and loss is unrecoverable.
+    Do not shrink it below 1.5 mm cap height or reflow it to fewer lines
+    without sign-off — see SPECIFICATIONS.md § Copy.
+  -->
+  <defs>
+    <clipPath id="trimB">
+      <rect x="3" y="3" width="85.6" height="53.98" rx="3.18" ry="3.18"/>
+    </clipPath>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#f6f4ee"/>
+      <stop offset="100%" stop-color="#e9e6dd"/>
+    </linearGradient>
+    <linearGradient id="edgeGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#f97316" stop-opacity="0"/>
+      <stop offset="45%"  stop-color="#f97316" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#trimB)">
+    <!-- Substrate -->
+    <rect x="0" y="0" width="91.6" height="59.98" fill="#080a0d"/>
+
+    <!-- Upper band: subtle tonal shift, replaces the magnetic stripe of a
+         conventional card. This card has no mag stripe — nothing to encode. -->
+    <rect x="0" y="9.5" width="91.6" height="9.5" fill="#0f1319"/>
+    <path d="M 62 9.5 L 91.6 9.5 L 91.6 19 L 74 19 Z" fill="#161b23" opacity="0.85"/>
+
+    <!-- Right edge accent -->
+    <rect x="87.4" y="3" width="1.2" height="53.98" fill="url(#edgeGlow)"/>
+
+    <!-- Signature panel -->
+    <g>
+      <rect x="9" y="24.5" width="56" height="9.2" rx="0.8" ry="0.8" fill="url(#panel)"/>
+      <!-- Ruling line for a signature -->
+      <line x1="11" y1="31.4" x2="63" y2="31.4" stroke="#c9c4b6" stroke-width="0.2"/>
+      <!-- Three dots: where the last digits of a card number would sit on a
+           conventional card. There is no card number — nothing identifies the
+           holder, by design. -->
+      <g fill="#9a958a">
+        <circle cx="58.4" cy="29.1" r="0.62"/>
+        <circle cx="60.4" cy="29.1" r="0.62"/>
+        <circle cx="62.4" cy="29.1" r="0.62"/>
+      </g>
+    </g>
+
+    <!-- Lightning tile beside the panel -->
+    <g>
+      <rect x="67.2" y="24.5" width="9.2" height="9.2" rx="1.2" ry="1.2"
+            fill="#12171f" stroke="#242c38" stroke-width="0.25"/>
+      <g transform="translate(70.1,26.3) scale(0.235)" fill="#f97316">
+        <path d="M 12 0 L 3 13 L 9 13 L 6 24 L 15 11 L 9 11 Z"/>
+      </g>
+    </g>
+
+    <!-- ─── Legal / bearer copy ─── -->
+    <g font-family="Inter, 'Helvetica Neue', sans-serif" fill="#8e949d">
+      <text x="9" y="39.4" font-size="1.72" font-weight="400">This card is a bearer instrument. Whoever holds this card controls the funds stored on the</text>
+      <text x="9" y="41.9" font-size="1.72" font-weight="400">chip. Keep it safe — treat it like cash. Lost or stolen cards cannot be recovered.</text>
+      <text x="9" y="45.6" font-size="1.62" font-weight="400" fill="#6f757e">Powered by Cashu ecash protocol · NFC ISO 14443-4 · JavaCard 3.0.5</text>
+      <text x="9" y="48.6" font-size="1.62" font-weight="500" fill="#f97316">getflash.io · flash@flashapp.me</text>
+    </g>
+
+    <!-- ─── Footer lockup ─── -->
+    <g font-family="Inter, 'Helvetica Neue', sans-serif">
+      <text x="9" y="54.4" font-weight="900" font-size="3.5" letter-spacing="0.08" fill="#c9ced6">FLASH</text>
+      <text x="24.2" y="54.4" font-weight="500" font-size="1.75" letter-spacing="0.5" fill="#767c85">BEARER PAYMENT CARD</text>
+    </g>
+  </g>
+</svg>

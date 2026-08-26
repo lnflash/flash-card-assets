@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewBox="-2 -24 40 48">
+  <!--
+    Contactless / NFC mark — three arcs and a dot, drawn as vector strokes.
+
+    This is a generic representation. The EMV Contactless Indicator is a
+    TRADEMARKED mark with its own reproduction rules (minimum size, clear space,
+    colour). If the finished card is to carry the official indicator, obtain the
+    artwork and licence from EMVCo rather than reusing this. For a Cashu bearer
+    card that is not on a card-scheme rail, this generic mark is appropriate.
+
+    Stroke is left as stroke, not outlined, so weight can be tuned at scale.
+    OUTLINE STROKES before release to plate.
+  -->
+  <g fill="none" stroke="#f97316" stroke-width="2.4" stroke-linecap="round">
+    <circle cx="0" cy="0" r="1.2" fill="#f97316" stroke="none"/>
+    <path d="M 6 -10 A 13 13 0 0 1 6 10"/>
+    <path d="M 13 -16 A 21 21 0 0 1 13 16"/>
+    <path d="M 20 -22 A 29 29 0 0 1 20 22"/>
+  </g>
+</svg>

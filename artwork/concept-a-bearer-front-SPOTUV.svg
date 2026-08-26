@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="91.6mm" height="59.98mm" viewBox="0 0 91.6 59.98">
+  <!--
+    ══ SPOT UV SEPARATION — Concept A FRONT ══
+    THIS FILE IS NOT ARTWORK. It is the varnish plate.
+
+    Everything solid black below receives UV spot gloss. Everything white
+    receives none. Registration is identical to concept-a-bearer-front.svg —
+    same artboard, same coordinates — so the two overlay exactly.
+
+    Per the approved spec the gloss falls on the FLASH wordmark ONLY. Against a
+    matte black card the effect is a wordmark that appears only when the card
+    catches the light, which is the entire point; extending the varnish to other
+    elements dilutes it.
+
+    Supply to the printer as a separate file, or as a spot channel named
+    "SpotUV" set to overprint. Do NOT merge it into the CMYK artwork.
+
+    Trapping: the glossed shape should match the printed wordmark exactly.
+    If the press cannot hold registration at this size, spread the varnish by
+    0.1 mm rather than choking it — a hairline of gloss on black is invisible,
+    a hairline of matte inside a glossed letter is not.
+  -->
+  <rect x="0" y="0" width="91.6" height="59.98" fill="#ffffff"/>
+
+  <text x="82.2" y="51.2" text-anchor="end"
+        font-family="Inter, 'Helvetica Neue', sans-serif"
+        font-weight="900" font-size="7.4" letter-spacing="0.15"
+        fill="#000000">FLASH</text>
+</svg>
